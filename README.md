@@ -14,6 +14,6 @@ For others:
 
 Also in file "calc_s.py" is a version of the calculator without PySimpleGUI, which works through the terminal.
 
-![Image 2](https://github.com/lestec-al/simple-calculator/raw/main/images/calc_pic_с.png)
+![Image 2](https://github.com/lestec-al/simple-calculator/raw/main/images/calc_pic_c.png)
 
 You can make exe file app, if use "pyinstaller" (https://pyinstaller.readthedocs.io/en/stable/installation.html)
