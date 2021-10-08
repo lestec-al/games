@@ -1,7 +1,7 @@
 # Simple Calculator
 A simple calculator application with PySimpleGUI interface.
 
-For linux debian (xubuntu tested) users there is a fully functional version in file "calc (ready app for linux)", which is enough to download and run.
+For linux debian (xubuntu tested) users there is a fully functional version in file "calc app", which is enough to download and run.
 
 For others:
 - install Python (version 3.9 or higher)
