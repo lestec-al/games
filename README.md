@@ -6,7 +6,7 @@ For linux debian (xubuntu tested) users there is a fully functional version in f
 For others:
 - install Python (version 3.9 or higher)
 - install PySimpleGUI (https://pysimplegui.readthedocs.io/en/latest/#installing-pysimplegui)
-- download project
+- download this project
 - launch via command line "python calc.py" in the project folder
 
 ![Image 1](https://github.com/lestec-al/simple-calculator/raw/main/images/calc_pic_1.png)
