@@ -12,6 +12,7 @@ For others:
 
 ![Image 1](https://github.com/lestec-al/simple-calculator/raw/main/images/calc_pic_1.png)
 ![Image 2](https://github.com/lestec-al/simple-calculator/raw/main/images/calc_pic_2.png)
+<img src="https://github.com/lestec-al/simple-calculator/raw/main/images/calc_pic_2.png" width="550" height="264" />
 
 Also in file "calc_s.py" is a version of the calculator without PySimpleGUI, which works through the terminal.
 
