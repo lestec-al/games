@@ -13,4 +13,4 @@ For others:
 
 ![Image 2](https://github.com/lestec-al/simple-calculator/raw/main/images/pic_2.png)
 
-You can make you exe file app, if you using "pyinstaller" ("pip install pyinstaller" for install, "pyinstaller calc.py" for make)
+You can make exe file app, if use pyinstaller (https://pyinstaller.readthedocs.io/en/stable/installation.html)
