@@ -9,10 +9,11 @@ For others:
 - download this project and extract
 - launch via command line "python calc.py" in the project folder
 
+![Image 1](https://github.com/lestec-al/simple-calculator/raw/main/images/calc_pic_1.png)
+![Image 2](https://github.com/lestec-al/simple-calculator/raw/main/images/calc_pic_2.png)
+
 Also in file "calc_s.py" is a version of the calculator without PySimpleGUI, which works through the terminal.
 
-![Image 1](https://github.com/lestec-al/simple-calculator/raw/main/images/calc_pic_1.png)
-
-![Image 2](https://github.com/lestec-al/simple-calculator/raw/main/images/calc_pic_2.png)
+![Image 2](https://github.com/lestec-al/simple-calculator/raw/main/images/calc_pic_с.png)
 
 You can make exe file app, if use "pyinstaller" (https://pyinstaller.readthedocs.io/en/stable/installation.html)
