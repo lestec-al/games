@@ -9,8 +9,8 @@ For others:
 - download project
 - launch via command line "python calc.py" in the project folder
 
-![Image 1](https://github.com/lestec-al/simple-calculator/raw/main/images/pic_1.png)
+![Image 1](https://github.com/lestec-al/simple-calculator/raw/main/images/calc_pic_1.png)
 
-![Image 2](https://github.com/lestec-al/simple-calculator/raw/main/images/pic_2.png)
+![Image 2](https://github.com/lestec-al/simple-calculator/raw/main/images/calc_pic_2.png)
 
 You can make exe file app, if use pyinstaller (https://pyinstaller.readthedocs.io/en/stable/installation.html)
