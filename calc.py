@@ -7,11 +7,10 @@ sg.theme("SystemDefault1")
 icon = r"/images/icon.png"
 
 # The buttons inside window
-layout3 =[  [sg.Button("=", size=(15,1))]]
 layout2 =[  [sg.Button("/"), sg.Button("⌫"), sg.Button("c")],
             [sg.Button("*"), sg.Button("^"), sg.Button("√")],
             [sg.Button("-"), sg.Button("("), sg.Button(")")],
-            [sg.Button("+"), sg.Column(layout3, justification="center")]]
+            [sg.Button("+"), sg.Button("=")]]
 layout1 =[  [sg.Button("7"), sg.Button("8"), sg.Button("9")],
             [sg.Button("4"), sg.Button("5"), sg.Button("6")],
             [sg.Button("1"), sg.Button("2"), sg.Button("3")],
