@@ -10,11 +10,8 @@ For others:
 - launch via command line "python calc.py" in the project folder
 - optional, you can make executable file for different OS, if use "pyinstaller" (https://pyinstaller.readthedocs.io/en/stable/installation.html)
 
-![Image 1](https://github.com/lestec-al/simple-calculator/raw/main/images/calc_pic_1.png)
-![Image 2](https://github.com/lestec-al/simple-calculator/raw/main/images/calc_pic_2.png)
-<img src="https://github.com/lestec-al/simple-calculator/raw/main/images/calc_pic_1.png" width="550" height="264" />
-<img src="https://github.com/lestec-al/simple-calculator/raw/main/images/calc_pic_2.png" width="366" height="176" />
+<img src="https://github.com/lestec-al/simple-calculator/raw/main/images/calc_pic_1.png" width="366" height="176" /> <img src="https://github.com/lestec-al/simple-calculator/raw/main/images/calc_pic_2.png" width="366" height="176" />
 
 Also in file "calc_s.py" is a version of the calculator without PySimpleGUI, which works through the terminal.
 
-![Image 2](https://github.com/lestec-al/simple-calculator/raw/main/images/calc_pic_c.png)
+<img src="https://github.com/lestec-al/simple-calculator/raw/main/images/calc_pic_c.png" width="541" height="366" />
