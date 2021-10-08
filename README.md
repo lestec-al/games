@@ -9,7 +9,7 @@ For others:
 - download project
 - launch via command line "python calc.py" in the project folder
 
-![Image 1](https://github.com/lestec-al/simple-calculator/raw/main/images/pic_1.png =250x250)
+![Image 1](https://github.com/lestec-al/simple-calculator/raw/main/images/pic_1.png | width=100)
 
 ![Image 2](https://github.com/lestec-al/simple-calculator/raw/main/images/pic_2.png)
 
