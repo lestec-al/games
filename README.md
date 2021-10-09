@@ -1,9 +1,7 @@
 # Simple Calculator
 A simple calculator application with PySimpleGUI interface. Features:
 - addition, subtraction, multiplication and division
-- parentheses
-- square root
-- exponentiation
+- parentheses, square root, exponentiation
 - last entered screen
 - keyboard input
 
