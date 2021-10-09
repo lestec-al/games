@@ -5,7 +5,7 @@ A simple calculator application with PySimpleGUI interface. Features:
 - last entered screen
 - keyboard input
 
-For linux debian (xubuntu tested) users there is a fully functional version in file "calc app", which is enough to download and run.
+For linux debian (xubuntu tested) users there is a fully functional version in "Releases" "calc_app.7z", which is enough to download, extract and run.
 
 For others:
 - install Python (version 3.9 or higher)
