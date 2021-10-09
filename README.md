@@ -5,6 +5,7 @@ A simple calculator application with PySimpleGUI interface. Features:
 - square root
 - exponentiation
 - last entered screen
+- keyboard input
 
 For linux debian (xubuntu tested) users there is a fully functional version in file "calc app", which is enough to download and run.
 
