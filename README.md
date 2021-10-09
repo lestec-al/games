@@ -20,4 +20,4 @@ For others:
 
 Also in file "calc_s.py" is a version of the calculator without PySimpleGUI, which works through the terminal.
 
-<img src="https://github.com/lestec-al/simple-calculator/raw/main/images/calc_pic_c.png" width="541" height="366" />
+<img src="https://github.com/lestec-al/simple-calculator/raw/main/images/calc_pic_s1.png" width="541" height="366" />
