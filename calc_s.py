@@ -3,7 +3,7 @@ import math
 
 while True:
     # Input & character test
-    my_string = input("Write the equation or exit: ")
+    my_string = input("Write the expression or exit: ")
     if my_string == "exit":
         break
     if all(x in ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", ".", "+", "-", "*", "/", "(", ")", "√"] for x in my_string) is False:
@@ -22,4 +22,4 @@ while True:
     except ZeroDivisionError:
         print("Can't divide by 0")
     except SyntaxError:
-        print("Incorrect equation")
+        print("Incorrect expression")
