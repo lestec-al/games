@@ -1,5 +1,10 @@
 # Simple Calculator
-A simple calculator application with PySimpleGUI interface.
+A simple calculator application with PySimpleGUI interface. Features:
+- addition, subtraction, multiplication and division
+- parentheses
+- square root
+- exponentiation
+- last entered screen
 
 For linux debian (xubuntu tested) users there is a fully functional version in file "calc app", which is enough to download and run.
 
