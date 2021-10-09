@@ -93,4 +93,4 @@ while True:
     except ZeroDivisionError:
         window["-OUTPUT-"].update("Can't divide by 0")
     except SyntaxError:
-        window["-OUTPUT-"].update("Incorrect equation")
+        window["-OUTPUT-"].update("Incorrect expression")
