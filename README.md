@@ -8,7 +8,7 @@ A simple calculator application with PySimpleGUI interface. Features:
 <img src="https://github.com/lestec-al/simple-calculator/raw/main/images/calc_pic_1.png" width="366" height="176" />
 <img src="https://github.com/lestec-al/simple-calculator/raw/main/images/calc_pic_2.png" width="366" height="176" />
 
-Also in file "calc_s.py" is a version of the calculator without PySimpleGUI, which works through the terminal.
+Also in file "calc_s.py" is a version of the calculator without PySimpleGUI, which works through the command line.
 
 <img src="https://github.com/lestec-al/simple-calculator/raw/main/images/calc_pic_s1.png" width="541" height="366" />
 
