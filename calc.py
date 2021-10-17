@@ -4,7 +4,7 @@ import math
 
 # App theme & icon
 sg.theme("SystemDefault1")
-icon = "/images/icon.png"
+icon = "images/icon.png"
 
 # The buttons inside window
 layout2 =[  [sg.Button("/"), sg.Button("⌫"), sg.Button("c")],
