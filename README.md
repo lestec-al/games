@@ -20,7 +20,7 @@ For linux debian (xubuntu tested) users there is a fully functional versions in 
 - install Python (version 3.9 or higher)
 - install PySimpleGUI (https://pysimplegui.readthedocs.io/en/latest/#installing-pysimplegui)
 - download this project and extract
-- launch via command line "python calc.py"(or "calc_tk.py" and "calc_s.py") in the project folder
+- launch via command line "python calc.py"(or "calc_tk.py", "calc_s.py") in the project folder
 - optional, you can make executable file for different OS, if use "pyinstaller" (https://pyinstaller.readthedocs.io/en/stable/installation.html)
 
 This program is one of my teaching projects.
