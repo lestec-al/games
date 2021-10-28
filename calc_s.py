@@ -2,14 +2,14 @@ import re
 import math
 
 while True:
-    # Input & character test
+    # input & character test
     my_string = input("Write the expression or exit: ")
     if my_string == "exit":
         break
     if all(x in ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", ".", "+", "-", "*", "/", "(", ")", "√"] for x in my_string) is False:
         print("Incorrect symbols")
         continue
-    # Operation
+    # operation
     try:  
         test1 = re.sub(r"(\d)\(", r"\1*(", my_string)
         test2 = re.sub(r"(\d)√", r"\1*√", test1)

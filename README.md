@@ -7,18 +7,18 @@ A simple calculator application with PySimpleGUI and Tkinter interfaces. Feature
 
 PySimpleGUI version (calc.py):
 
-<img src="https://github.com/lestec-al/simple-calculator/raw/main/images/calc_pic_1.png" width="366" height="176" />
-<img src="https://github.com/lestec-al/simple-calculator/raw/main/images/calc_pic_2.png" width="366" height="176" />
+<img src="https://github.com/lestec-al/simple-calculator/raw/main/data/calc_pic_1.png" width="366" height="176" />
+<img src="https://github.com/lestec-al/simple-calculator/raw/main/data/calc_pic_2.png" width="366" height="176" />
 
 Tkinter version (calc_tk.py):
 
-<img src="https://github.com/lestec-al/simple-calculator/raw/main/images/calc_pic_tk.png" width="366" height="176" />
+<img src="https://github.com/lestec-al/simple-calculator/raw/main/data/calc_pic_tk.png" width="366" height="176" />
 
 Also in file "calc_s.py" is a version of the calculator without interface, which works through the command line.
 
-<img src="https://github.com/lestec-al/simple-calculator/raw/main/images/calc_pic_s1.png" width="541" height="366" />
+<img src="https://github.com/lestec-al/simple-calculator/raw/main/data/calc_pic_s1.png" width="541" height="366" />
 
-For linux debian (xubuntu tested) users there is a fully functional versions in files "Simple Calculator" and "Simple Calculator Tk"(Tkinter), which is enough to download and run. For others:
+For linux debian (xubuntu tested) users there is a fully functional versions in files "calc app" and "calc tk app"(Tkinter), which is enough to download and run. For others:
 - install Python (v3.9 or higher)
 - install PySimpleGUI (https://pysimplegui.readthedocs.io/en/latest/#installing-pysimplegui)
 - install Tkinter (https://tkdocs.com/tutorial/install.html)

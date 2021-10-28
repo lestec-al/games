@@ -2,11 +2,8 @@ import PySimpleGUI as sg
 import re
 import math
 
-# App theme & icon
 sg.theme("SystemDefault1")
-icon = "images/icon.png"
-
-# The buttons inside window
+# the buttons inside window
 layout2 =[  [sg.Button("/"), sg.Button("⌫"), sg.Button("c")],
             [sg.Button("*"), sg.Button("^"), sg.Button("√")],
             [sg.Button("-"), sg.Button("("), sg.Button(")")],
@@ -18,18 +15,15 @@ layout1 =[  [sg.Button("7"), sg.Button("8"), sg.Button("9")],
 layout = [  [sg.Input(size=(34,1), justification="right", key="-INPUT-", font=("Helvetica", 20))],
             [sg.Text(key="-OUTPUT-", justification="right", size=(45,1), font=("Helvetica", 15))],
             [sg.Column(layout1, pad=(0,0)), sg.Column(layout2, pad=(0,0))]]
-
-# The Window itself param
-window = sg.Window("Simple Calculator", layout, element_padding=2, element_justification="center", debugger_enabled=False, auto_size_buttons=False, default_button_element_size=(6,1), font=("Helvetica", 12, "bold"), return_keyboard_events=True, icon=icon)
-
-# Main loop
+# the Window itself param
+window = sg.Window("Simple Calculator", layout, element_padding=2, element_justification="center", debugger_enabled=False, auto_size_buttons=False, default_button_element_size=(6,1), font=("Helvetica", 12, "bold"), return_keyboard_events=True, icon="data/calc.png")
+# main loop
 while True:
     event, values = window.read()
     if event == sg.WIN_CLOSED:
         break
     my_string = values["-INPUT-"]
-
-    # Buttons events
+    # buttons events
     if event == "1":
         window["-INPUT-"].update(my_string + "1")
     if event == "2":
@@ -73,8 +67,7 @@ while True:
     if event == "c":
         window["-INPUT-"].update(my_string.replace(my_string, ""))
         window["-OUTPUT-"].update("")
-
-    # Operation
+    # operation
     try:
         if event == "=" or event == "KP_Enter:104" or event == "Return:36":
             if all(x in ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", ".", "+", "-", "*", "/", "(", ")", "√", "^"] for x in my_string) is False:
