@@ -8,7 +8,6 @@ A simple calculator application with PySimpleGUI and Tkinter interfaces. Feature
 PySimpleGUI version (calc.py):
 
 <img src="https://github.com/lestec-al/simple-calculator/raw/main/data/calc_pic_1.png" width="366" height="176" />
-<img src="https://github.com/lestec-al/simple-calculator/raw/main/data/calc_pic_2.png" width="366" height="176" />
 
 Tkinter version (calc_tk.py):
 
