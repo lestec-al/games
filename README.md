@@ -1,26 +1,27 @@
-# Simple Calculator
-A simple calculator application with PySimpleGUI and Tkinter interfaces. Features:
-- addition, subtraction, multiplication and division
-- parentheses, square root, exponentiation
-- last entered screen
-- keyboard input
+# A collection of Python games and apps
 
-PySimpleGUI version (calc.py):
+Minesweeper game with Tkinter and command line interfaces.
+<img src="https://github.com/lestec-al/dice/raw/main/data/minesweeper_tk_pic.png" />
+<img src="https://github.com/lestec-al/dice/raw/main/data/minesweeper_cl_pic.png" />
 
-<img src="https://github.com/lestec-al/simple-calculator/raw/main/data/calc_pic_1.png" width="366" height="176" />
+Tic-Tac-Toe game with Tkinter and command line interfaces.
+<img src="https://github.com/lestec-al/dice/raw/main/data/tic_tac_toe_tk_pic.png" />
+<img src="https://github.com/lestec-al/dice/raw/main/data/tic_tac_toe_cl_pic.png" />
 
-Tkinter version (calc_tk.py):
+Calculator app with Tkinter, PySimpleGUI and command line interfaces. With keyboard support.
+<img src="https://github.com/lestec-al/simple-calculator/raw/main/data/calc_tk_pic.png" />
+<img src="https://github.com/lestec-al/simple-calculator/raw/main/data/calc_cl_pic.png" />
 
-<img src="https://github.com/lestec-al/simple-calculator/raw/main/data/calc_pic_tk.png" width="366" height="176" />
+Dice app with Tkinter and PySimpleGUI interfaces.
+<img src="https://github.com/lestec-al/dice/raw/main/data/dice_pic.png" />
 
-Also in file "calc_s.py" is a version of the calculator without interface, which works through the command line.
+Sudoku Solver on command line. Auto solving sudoku board.
+<img src="https://github.com/lestec-al/dice/raw/main/data/sudoku_solver_pic.png" />
 
-<img src="https://github.com/lestec-al/simple-calculator/raw/main/data/calc_pic_s1.png" width="541" height="366" />
+Songs Tester. Testing MP3 songs from a selected directory and moving damaged files to a new folder (need PyGame).
 
 You need:
 - install Python (v3.9 or higher)
-- install PySimpleGUI (https://pysimplegui.readthedocs.io/en/latest/#installing-pysimplegui)
-- install Tkinter (https://tkdocs.com/tutorial/install.html)
-- download this project and extract
-- launch via command line "python calc.py"(or "calc_tk.py", "calc_s.py") in the project folder
-- optional, you can make executable file for different OS, if use "pyinstaller" (https://pyinstaller.readthedocs.io/en/stable/installation.html)
+- Depending on the project, install: Tkinter (https://tkdocs.com/tutorial/install.html), PySimpleGUI (https://pysimplegui.readthedocs.io/en/latest/#installing-pysimplegui), PyGame (https://pypi.org/project/pygame/)
+- download (and extract) or clone this repo
+- type via command line "python *.py" (eg minesweeper.py) in the project folder (additional launch options is written at the end of the *.py files)
