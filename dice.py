@@ -14,8 +14,8 @@ def dice_pysimplegui():
                 ],
                 [sg.Text(key="-OUTPUT-", text_color="green", justification="center", font=("Helvetica", 30), size=(20,1))],
                 [
-                    sg.Button("CLEAN", button_color="grey"),
-                    sg.Text(str(count) + " scrolls", key="-OUTPUT1-", font=("Helvetica", 12), size=(10,1)),
+                    sg.Button("CLEAN", button_color="red"),
+                    sg.Text(str(count) + "/10", key="-OUTPUT1-", font=("Helvetica", 12), size=(10,1)),
                     sg.Input(key="-OUTPUT2-", font=("Helvetica", 12), readonly=True, size=(20,1))
                 ],
                 [sg.Button("START", button_color="green", size=(6,2), font=("Helvetica", 12, "bold"))] ]
@@ -48,24 +48,23 @@ def dice_pysimplegui():
             window["-OUTPUT-"].update(str(numx))
             count += 1
             values1 = values1 + " " + str(numx)
-            window["-OUTPUT1-"].update(str(count) + " scrolls")
+            window["-OUTPUT1-"].update(str(count) + "/10")
             window["-OUTPUT2-"].update(values1)
         if event == "CLEAN":
             numx = ""
             count = 0
             values1 = ""
             window["-OUTPUT-"].update(numx)
-            window["-OUTPUT1-"].update(str(count) + " scrolls")
+            window["-OUTPUT1-"].update(str(count) + "/10")
             window["-OUTPUT2-"].update(values1)
 
 def dice_tkinter():
     import tkinter as tk
     # Operations
     def start():
-        global count
         my_string1 = entry1.get()
         my_string2 = entry2.get()
-        if count >= 10:
+        if count[0] >= 10:
             clean()
         elif len(my_string1) >= 2 or len(my_string2) >= 2:
             label["text"]="Too many symbols"
@@ -74,41 +73,41 @@ def dice_tkinter():
                 time.sleep(0.5)
                 numx = random.randint(int(my_string1), int(my_string2))
                 label["text"]=str(numx)
-                count += 1
-                label2["text"]=str(count) + " scrolls:"
+                count[0] += 1
+                label2["text"]=str(count[0]) + "/10:"
                 label3["text"]=label3["text"] + " " + str(numx)
             except ValueError:
                 label["text"]="Write a numbers"
     def clean():
-        global count
-        count = 0
+        count[0] = 0
         label["text"]=""
-        label2["text"]="0 scrolls:"
+        label2["text"]="0/10:"
         label3["text"]=""
     # Window settings
-    count = 0
+    count = [0]
     window = tk.Tk()
     window.resizable(False, False)
     window.title("Dice")
     window.iconphoto(False, tk.PhotoImage(file='data/dice.png'))
-    window.geometry("400x200")
-    frame1 = tk.Frame(window)
+    frame = tk.Frame(window, border=8)
+    frame.pack()
+    frame1 = tk.Frame(frame)
     frame1.pack()
     tk.Label(frame1, text="Roll dice between", font="size= 14", anchor="w").grid(column=0, row=0, columnspan=2)
     entry1 = tk.Entry(frame1, width=3, background="lightgrey", font="size= 16", justify="center", highlightcolor="white", highlightthickness=0)
     entry1.grid(column=2, row=0)
     entry1.insert("end", "1")
-    tk.Label(frame1, text="&", font="size= 14", anchor="w").grid(column=3, row=0)
+    tk.Label(frame1, text="and", font="size= 14", anchor="w").grid(column=3, row=0)
     entry2 = tk.Entry(frame1, width=3, background="lightgrey", font="size= 16", justify="center", highlightcolor="white", highlightthickness=0)
     entry2.grid(column=4, row=0)
     entry2.insert("end", "6")
-    label = tk.Label(window, fg="darkgreen", font="size= 26", anchor="w")
+    label = tk.Label(frame, fg="green", font="size= 26", anchor="w")
     label.pack()
-    tk.Button(window, bg="green", fg="white",  text="START", height=2, width=6, font=("Helvetica", 16), command=start).pack(side='bottom')
-    frame2 = tk.Frame(window)
+    tk.Button(frame, bg="green", fg="white",  text="START", height=1, width=6, font=("Helvetica", 16), command=start).pack(side='bottom')
+    frame2 = tk.Frame(frame, border=5)
     frame2.pack(side="left")
-    tk.Button(frame2, text="✖", fg="white", bg="grey", height=1, width=3, font=("Helvetica", 12), command=clean).grid(column=0, row=0)
-    label2 = tk.Label(frame2, text="0 scrolls:", font="size= 14", anchor="w")
+    tk.Button(frame2, text="✖", fg="white", bg="red", height=1, width=3, font=("Helvetica", 12), command=clean).grid(column=0, row=0)
+    label2 = tk.Label(frame2, text="0/10:", font="size= 14", anchor="w")
     label2.grid(column=1, row=0)
     label3 = tk.Label(frame2, font="size= 14", anchor="w")
     label3.grid(column=2, row=0, columnspan=3)
