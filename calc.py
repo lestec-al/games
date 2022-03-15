@@ -150,16 +150,18 @@ def calc_tkinter():
     window.resizable(False, False)
     window.title("Calculator")
     window.iconphoto(False, tk.PhotoImage(file='data/calc.png'))
-    entry = tk.Entry(window, width=35, font="size= 16", justify="right", highlightcolor="white", highlightthickness=0)
+    frame = tk.Frame(window, border=5)
+    frame.pack()
+    entry = tk.Entry(frame, width=35, font="size= 16", justify="right", highlightcolor="white", highlightthickness=0)
     entry.grid(column=0, row=1, columnspan=6)
     entry.focus_set()
-    label = tk.Label(window, width=40, font="size= 14", anchor="e")
+    label = tk.Label(frame, width=40, font="size= 14", anchor="e")
     label.grid(column=0, row=2, columnspan=6)
     # Buttons
     def my_button(text_b, col, row):
-        button = tk.Button(window, text=text_b, height=1, width=6, font=("Helvetica", 12, "bold"), command=lambda: insert(text_b)).grid(column=col, row=row)
+        tk.Button(frame, text=text_b, height=1, width=6, font=("Helvetica", 12, "bold"), command=lambda: insert(text_b), relief="groove").grid(column=col, row=row)
     def my_button1(text_b, op, col, row):
-        button = tk.Button(window, text=text_b, height=1, width=6, font=("Helvetica", 12, "bold"), command=op).grid(column=col, row=row)
+        tk.Button(frame, text=text_b, height=1, width=6, font=("Helvetica", 12, "bold"), command=op, relief="groove").grid(column=col, row=row)
     my_button("7", 0, 3), my_button("8", 1, 3), my_button("9", 2, 3)
     my_button("4", 0, 4), my_button("5", 1, 4), my_button("6", 2, 4)
     my_button("1", 0, 5), my_button("2", 1, 5), my_button("3", 2, 5)
