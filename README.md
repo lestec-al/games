@@ -2,19 +2,19 @@
 
 Minesweeper game with Tkinter and command line interfaces.
 
-<img src="https://github.com/lestec-al/python-games-and-apps/raw/main/data/minesweeper_tk_pic.png" width="273" height="295"/> <img src="https://github.com/lestec-al/python-games-and-apps/raw/main/data/minesweeper_cl_pic.png" width="331" height="178"/>
+<img src="https://github.com/lestec-al/python-games-and-apps/raw/main/data/minesweeper_tk_pic.png" width="270" height="290"/>  <img src="https://github.com/lestec-al/python-games-and-apps/raw/main/data/minesweeper_cl_pic.png" width="330" height="180"/>
 
 Tic-Tac-Toe game with Tkinter and command line interfaces.
 
-<img src="https://github.com/lestec-al/python-games-and-apps/raw/main/data/tic_tac_toe_cl_pic.png" width="262" height="245"/> <img src="https://github.com/lestec-al/python-games-and-apps/raw/main/data/tic_tac_toe_tk_pic.png" width="166" height="182"/>
+<img src="https://github.com/lestec-al/python-games-and-apps/raw/main/data/tic_tac_toe_tk_pic.png" width="170" height="180"/>  <img src="https://github.com/lestec-al/python-games-and-apps/raw/main/data/tic_tac_toe_cl_pic.png" width="260" height="240"/>
 
 Calculator app with Tkinter, PySimpleGUI and command line interfaces. With keyboard support.
 
-<img src="https://github.com/lestec-al/python-games-and-apps/raw/main/data/calc_cl_pic.png" width="302" height="219"/> <img src="https://github.com/lestec-al/python-games-and-apps/raw/main/data/calc_tk_pic.png" width="253" height="115"/>
+<img src="https://github.com/lestec-al/python-games-and-apps/raw/main/data/calc_tk_pic.png" width="250" height="115"/>  <img src="https://github.com/lestec-al/python-games-and-apps/raw/main/data/calc_cl_pic.png" width="300" height="220"/>
 
 Dice app with Tkinter and PySimpleGUI interfaces.
 
-<img src="https://github.com/lestec-al/python-games-and-apps/raw/main/data/dice_pic.png" width="206" height="124"/>
+<img src="https://github.com/lestec-al/python-games-and-apps/raw/main/data/dice_pic.png" width="200" height="120"/>
 
 Sudoku Solver on command line. Auto solving sudoku board.
 
