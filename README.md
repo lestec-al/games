@@ -2,26 +2,23 @@
 
 Minesweeper game with Tkinter and command line interfaces.
 
-<img src="https://github.com/lestec-al/python-games-and-apps/raw/main/data/minesweeper_tk_pic.png" width="273" height="295" />
-<img src="https://github.com/lestec-al/python-games-and-apps/raw/main/data/minesweeper_cl_pic.png" width="331" height="178" />
+<img src="https://github.com/lestec-al/python-games-and-apps/raw/main/data/minesweeper_tk_pic.png" width="273" height="295"/><img src="https://github.com/lestec-al/python-games-and-apps/raw/main/data/minesweeper_cl_pic.png" width="331" height="178"/>
 
 Tic-Tac-Toe game with Tkinter and command line interfaces.
 
-<img src="https://github.com/lestec-al/python-games-and-apps/raw/main/data/tic_tac_toe_tk_pic.png" width="166" height="182" />
-<img src="https://github.com/lestec-al/python-games-and-apps/raw/main/data/tic_tac_toe_cl_pic.png" width="262" height="245" />
+<img src="https://github.com/lestec-al/python-games-and-apps/raw/main/data/tic_tac_toe_cl_pic.png" width="262" height="245"/><img src="https://github.com/lestec-al/python-games-and-apps/raw/main/data/tic_tac_toe_tk_pic.png" width="166" height="182"/>
 
 Calculator app with Tkinter, PySimpleGUI and command line interfaces. With keyboard support.
 
-<img src="https://github.com/lestec-al/python-games-and-apps/raw/main/data/calc_tk_pic.png" width="253" height="115" />
-<img src="https://github.com/lestec-al/python-games-and-apps/raw/main/data/calc_cl_pic.png" width="302" height="219" />
+<img src="https://github.com/lestec-al/python-games-and-apps/raw/main/data/calc_cl_pic.png" width="302" height="219"/><img src="https://github.com/lestec-al/python-games-and-apps/raw/main/data/calc_tk_pic.png" width="253" height="115"/>
 
 Dice app with Tkinter and PySimpleGUI interfaces.
 
-<img src="https://github.com/lestec-al/python-games-and-apps/raw/main/data/dice_pic.png" width="206" height="124" />
+<img src="https://github.com/lestec-al/python-games-and-apps/raw/main/data/dice_pic.png" width="206" height="124"/>
 
 Sudoku Solver on command line. Auto solving sudoku board.
 
-<img src="https://github.com/lestec-al/python-games-and-apps/raw/main/data/sudoku_solver_pic.png" width="300" height="340" />
+<img src="https://github.com/lestec-al/python-games-and-apps/raw/main/data/sudoku_solver_pic.png" width="300" height="340"/>
 
 Songs Tester. Testing MP3 songs from a selected directory and moving damaged files to a new folder (need PyGame).
 
