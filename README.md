@@ -12,7 +12,7 @@ Calculator app with Tkinter, PySimpleGUI and command line interfaces. With keybo
 
 <img src="https://github.com/lestec-al/python-games-and-apps/raw/main/data/calc_tk_pic.png" width="250" height="115"/>  <img src="https://github.com/lestec-al/python-games-and-apps/raw/main/data/calc_cl_pic1.png" width="250" height="115"/>
 
-Dice app with Tkinter and PySimpleGUI interfaces (Screenshots from Linux Xubuntu 20.04).
+Dice app with Tkinter and PySimpleGUI interfaces (Screenshot from Linux Xubuntu 20.04).
 
 <img src="https://github.com/lestec-al/python-games-and-apps/raw/main/data/dice_pic.png" width="200" height="120"/>
 
