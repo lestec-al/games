@@ -23,8 +23,8 @@ Sudoku Solver on command line. Auto solving sudoku board.
 Songs Tester. Testing MP3 songs from a selected directory and moving damaged files to a new folder (need PyGame).
 
 You need:
-- OS: Windows (apps tested on win 10) or Linux Ubuntu-based distros (apps tested on Xubuntu 20.04)
 - install Python (v3.9 or higher)
 - Depending on the project, install: Tkinter (https://tkdocs.com/tutorial/install.html), PySimpleGUI (https://pysimplegui.readthedocs.io/en/latest/#installing-pysimplegui), PyGame (https://pypi.org/project/pygame/)
 - download (and extract) or clone this repo
 - type via command line "python *.py" (eg minesweeper.py) in the project folder (additional launch options is written at the end of the *.py files)
+- optional, you can make executable file for different OS, if use "pyinstaller" (https://pyinstaller.readthedocs.io/en/stable/installation.html)
