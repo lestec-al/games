@@ -1,5 +1,6 @@
 import random
 import copy
+import time
 
 def print_board(board):
     """Print board on the command line"""
@@ -17,6 +18,9 @@ def print_board(board):
 def solver(board):
     """Sudoku solver
     board: ready sudoku board"""
+    print("\nBefore:")
+    print_board(board)
+    start = time.time()
     tries = 0
     board1 = copy.deepcopy(board)
     while True:
@@ -110,7 +114,7 @@ def solver(board):
                         # Checking number
                         if (random_int not in board[i_row]) and (check_column == True) and (check_squares == True):
                             board[i_row][i_item] = random_int
-                            ready = True 
+                            ready = True
         # Checking result
         zero_count = 0
         for row in board:
@@ -118,15 +122,15 @@ def solver(board):
                 if item == 0:
                     zero_count += 1
         if zero_count == 0:
-            print("Solved")
+            print(f"Solved in {int((time.time()-start)/60) if (time.time()-start)/60 > 1 else int(time.time()-start)}\n")
             print("After:")
             print_board(board)
             return board
         else:
             tries += 1
-        # If not solvable
-        if tries >= 5000:
-            print("NOT solvable\n")
+        # If too many tries - not solved
+        if tries >= 10000:
+            print(f"Not solved in {int((time.time()-start)/60) if (time.time()-start)/60 > 1 else int(time.time()-start)}\n")
             return board
 
 if __name__ == "__main__":
@@ -142,7 +146,5 @@ if __name__ == "__main__":
         [0, 8, 0, 0, 0, 0, 0, 0, 0],
         [2, 0, 4, 6, 8, 0, 0, 0, 0]]
 
-    print("\nBefore:")
-    print_board(board)
     # Solver itself
     solver(board)

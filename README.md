@@ -16,7 +16,7 @@ Dice app with Tkinter and PySimpleGUI interfaces (Screenshot from Linux Xubuntu 
 
 <img src="https://github.com/lestec-al/python-games-and-apps/raw/main/data/dice_pic.png" width="200" height="120"/>
 
-Sudoku Solver on command line. Auto solving sudoku board.
+Sudoku Solver on command line. Auto solving easy difficulty sudoku boards (hard may not solve).
 
 <img src="https://github.com/lestec-al/python-games-and-apps/raw/main/data/sudoku_solver_pic.png" width="300" height="340"/>
 
