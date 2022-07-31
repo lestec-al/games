@@ -20,6 +20,10 @@ Sudoku Solver on command line. Auto solving easy difficulty sudoku boards (hard 
 
 <img src="https://github.com/lestec-al/python-games-and-apps/raw/main/data/sudoku_solver_pic.png" width="300" height="340"/>
 
+Application for copying files and directories to a virtual machine for Windows with Tkinter interface (need start a command line as an administrator).
+
+<img src="https://github.com/lestec-al/python-games-and-apps/raw/main/data/copy_vm_pic.png" width="300" height="170"/>
+
 Songs Tester. Testing MP3 songs from a selected directory and moving damaged files to a new folder (need PyGame).
 
 You need:
