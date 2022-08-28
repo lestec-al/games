@@ -1,6 +1,4 @@
-import random
-import math
-import time
+import random, math, time
 
 def count_spaces(board):
     free_spaces = 0
@@ -150,6 +148,11 @@ def play_interface(opponent_player):
     """Play Tic-Tac-Toe with the interface
     Opponent: human_player, smart_machine_player, random_machine_player"""
     import tkinter as tk
+    import sys, platform
+    # Fix graphic on Win 10
+    if sys.platform == "win32" and platform.release() == "10":
+        from ctypes import windll
+        windll.shcore.SetProcessDpiAwareness(1)
     def game(x_player="human_player_tk", o_player="human_player_tk"):
         def human_player_tk(board, player=None):
             # Printing a board (creating buttons with the ability to click on them for move)
@@ -227,7 +230,5 @@ def play_interface(opponent_player):
 
 if __name__ == '__main__':
     # Players: human_player, random_machine_player, smart_machine_player
-    # play_once(x_player, o_player)
-    # play_more_games(number_of_games, x_player, o_player)
-    # play_interface(opponent_player)
+    # Game options: play_once(x_player, o_player), play_more_games(number_of_games, x_player, o_player), play_interface(opponent_player)
     play_interface(random_machine_player)

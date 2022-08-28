@@ -1,24 +1,24 @@
-import time
-import random
+import time, random
 
 def dice_pysimplegui():
     import PySimpleGUI as sg
     # Window settings
     sg.theme("DefaultNoMoreNagging")
     count = 0
-    layout = [  [
-                    sg.Text("Roll dice between", font=("Helvetica", 15), size=(15,1)),
-                    sg.Input(default_text=1, background_color="lightgrey", size=(2,1), key="-INPUT1-", font=("Helvetica", 16)),
-                    sg.Text("&", font=("Helvetica", 15), size=(2,1)),
-                    sg.Input(default_text=6, background_color="lightgrey", size=(2,1), key="-INPUT2-", font=("Helvetica", 16))
-                ],
-                [sg.Text(key="-OUTPUT-", text_color="green", justification="center", font=("Helvetica", 30), size=(20,1))],
-                [
-                    sg.Button("CLEAN", button_color="red"),
-                    sg.Text(str(count) + "/10", key="-OUTPUT1-", font=("Helvetica", 12), size=(10,1)),
-                    sg.Input(key="-OUTPUT2-", font=("Helvetica", 12), readonly=True, size=(20,1))
-                ],
-                [sg.Button("START", button_color="green", size=(6,2), font=("Helvetica", 12, "bold"))] ]
+    layout = [
+        [
+            sg.Text("Roll dice between", font=("Helvetica", 15), size=(15,1)),
+            sg.Input(default_text=1, background_color="lightgrey", size=(2,1), key="-INPUT1-", font=("Helvetica", 16)),
+            sg.Text("&", font=("Helvetica", 15), size=(2,1)),
+            sg.Input(default_text=6, background_color="lightgrey", size=(2,1), key="-INPUT2-", font=("Helvetica", 16))
+        ],
+        [sg.Text(key="-OUTPUT-", text_color="green", justification="center", font=("Helvetica", 30), size=(20,1))],
+        [
+            sg.Button("CLEAN", button_color="red"),
+            sg.Text(str(count) + "/10", key="-OUTPUT1-", font=("Helvetica", 12), size=(10,1)),
+            sg.Input(key="-OUTPUT2-", font=("Helvetica", 12), readonly=True, size=(20,1))
+        ],
+        [sg.Button("START", button_color="green", size=(6,2), font=("Helvetica", 12, "bold"))] ]
     window = sg.Window("Dice", layout, element_justification="center", return_keyboard_events=True, debugger_enabled=False, finalize=True, text_justification="center", icon='data/dice.png')
     # Main loop
     while True:
@@ -60,6 +60,11 @@ def dice_pysimplegui():
 
 def dice_tkinter():
     import tkinter as tk
+    import sys, platform
+    # Fix graphic on Win 10
+    if sys.platform == "win32" and platform.release() == "10":
+        from ctypes import windll
+        windll.shcore.SetProcessDpiAwareness(1)
     # Operations
     def start():
         my_string1 = entry1.get()
@@ -114,6 +119,5 @@ def dice_tkinter():
     window.mainloop()
 
 if __name__ == "__main__":
-    # dice_tkinter()
-    # dice_pysimplegui()
+    # Game options: dice_tkinter(), dice_pysimplegui()
     dice_tkinter()

@@ -1,6 +1,4 @@
-import random
-import copy
-import time
+import random, copy, time
 
 def print_board(board):
     """Print board on the command line"""

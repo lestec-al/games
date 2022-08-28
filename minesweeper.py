@@ -1,6 +1,4 @@
-import random
-import time
-import tkinter as tk
+import sys, platform, random, time, tkinter as tk
 
 def add_mines_numbers(board, mines):
     # Add mines
@@ -381,6 +379,10 @@ def play_interface(board_size=10, mines=13):
         board_2 = scan_empty_around_marks(board_2)
         buttons_for_destroying = []
         board_2 = reload_board(board_2)
+    # Fix graphic on Win 10
+    if sys.platform == "win32" and platform.release() == "10":
+        from ctypes import windll
+        windll.shcore.SetProcessDpiAwareness(1)
     # Windows settings
     window = tk.Tk()
     window.resizable(False, False)
@@ -398,6 +400,5 @@ def play_interface(board_size=10, mines=13):
     window.mainloop()
 
 if __name__ == "__main__":
-    # play_command_line(board_size, mines)
-    # play_interface(board_size, mines)
+    # Game options: play_command_line(board_size, mines), play_interface(board_size, mines)
     play_interface()

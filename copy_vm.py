@@ -1,5 +1,6 @@
-import os, sys, subprocess, stat, tkinter as tk
+import os, sys, platform, subprocess, stat, tkinter as tk
 from tkinter import filedialog
+
 
 def start_copy(vm, destination, sources):
     output_widget.delete("1.0", "end")
@@ -14,7 +15,7 @@ def start_copy(vm, destination, sources):
                 if output == "":
                     counters["valid"] += 1
                 else:
-                    output_widget.pack(side="bottom")
+                    output_widget.pack(side="bottom", fill="both", expand=1)
                     output_widget.insert("end", f"\n{x}")
                     output_widget.insert("end", f"\n{output}")
                     counters["invalid"] += 1
@@ -36,10 +37,12 @@ def start_copy(vm, destination, sources):
     else:
         info_label.config(text="Error")
 
+
 def delete_path(path, frame):
     if path in sources:
         sources.remove(path)
         frame.destroy()
+
 
 def ask_path(var):
     if var == "dir":
@@ -56,18 +59,21 @@ def ask_path(var):
         s.config(state="disabled")
         sources.append(path)
 
+
 # Fix graphic on Win 10
-if sys.platform == "win32":
+if sys.platform == "win32" and platform.release() == "10":
     from ctypes import windll
     windll.shcore.SetProcessDpiAwareness(1)
-# Window
+
+# GUI
 root = tk.Tk()
 root.title("Copy to Virtual Machine")
 root.resizable(True, True)
 root.minsize(width=600, height=300)
+root.iconphoto(False, tk.PhotoImage(file='data/copy.png'))
 window = tk.Frame(root, border=20)
 window.pack(fill="both")
-# Widgets
+
 info_label = tk.Label(window, text="", font=("Arial", 12), border=2)
 info_label.pack(side="top")
 frame_1 = tk.Frame(window, border=1)
@@ -91,6 +97,6 @@ start_button = tk.Button(
     command=lambda: start_copy(vm.get(), destination.get(), sources))
 start_button.pack(side="bottom")
 output_widget = tk.Text(root, height=15)
-#
+
 sources = []
-window.mainloop()
+root.mainloop()

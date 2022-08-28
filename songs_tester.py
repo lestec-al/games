@@ -1,5 +1,4 @@
-import os
-import sys
+import os, sys
 from pygame import mixer
 
 def songs_tester(path: str):

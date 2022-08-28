@@ -1,5 +1,4 @@
-import re
-import math
+import re, math
 
 def calc_command_line():
     """Calculator with command line interface"""
@@ -116,6 +115,11 @@ def calc_pysimplegui():
 def calc_tkinter():
     """Calculator with Tkinter interface"""
     import tkinter as tk
+    import sys, platform
+    # Fix graphic on Win 10
+    if sys.platform == "win32" and platform.release() == "10":
+        from ctypes import windll
+        windll.shcore.SetProcessDpiAwareness(1)
     # Operations
     def insert(char):
         entry.insert("end", char)
@@ -176,7 +180,5 @@ def calc_tkinter():
     window.mainloop()
 
 if __name__ == "__main__":
-    # calc_tkinter()
-    # calc_pysimplegui()
-    # calc_command_line()
+    # Select one of: calc_tkinter(), calc_pysimplegui(), calc_command_line()
     calc_tkinter()
